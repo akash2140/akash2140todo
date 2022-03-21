@@ -1,0 +1,151 @@
+/* OUr webpage Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.agenda-input{
+  width:350px;
+  background-color: #e5dfdb;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 40px;
+
+}
+
+.agenda-button{
+  background-color: #e5dfdb;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Link Styles */
+a {
+  color: #fccc54;
+  text-decoration: none;
+}
+.agenda-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20%;
+}
+
+/* Link Hover */
+a:hover {
+  color: #c8f524;
+  transition: 0.25s;
+}
+
+.delete-button,
+.complete-button {
+  background: #61463f;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+  left: 102px;
+}
+/* Body Styles */
+body {
+
+  background-image: url('./Naruto_im.jpg');
+  color: white;
+  min-height: 100vh;
+  font-family: sans-serif, sans-serif;
+  background-size: cover;
+}
+
+/* Header STyles */
+header{
+  min-height: 20vh;
+  display: flex;
+  margin-left: 27%;
+  align-items: center;
+  position: relative;
+}
+
+.agenda-input:focus-visible{
+  outline: none;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20%;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background: white;
+  font-family: "Roboto", sans-serif;
+}
+/* form Button Styling */
+form button {
+  color: #050305;
+  background: #e5dfdb;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+form button:hover {
+  background: #948794;
+  color: white;
+}
+
+
+
+.todo-list {
+  min-width: 30%;
+  list-style: none; 
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+.todo li {
+  flex: 1;
+}
+
+
+.complete-button {
+  background: rgb(130, 143, 140);
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fall {
+  opacity: 0;
+  transform: translateY(30vw);
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+.completed:before {
+  margin-left: 5px;
+}
+
